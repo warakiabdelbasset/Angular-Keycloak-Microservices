@@ -7,9 +7,9 @@ import {SuppliersService} from '../services/suppliers.service';
   styleUrls: ['./suppliers.component.css']
 })
 export class SuppliersComponent implements OnInit {
-  private suppliers: any;
-  private errMessage: any;
-  constructor(private suppliersService:SuppliersService) { }
+  public suppliers: any;
+  public errMessage: any;
+  constructor(public suppliersService:SuppliersService) { }
 
   ngOnInit() {
   this.suppliersService.getSuppliers()

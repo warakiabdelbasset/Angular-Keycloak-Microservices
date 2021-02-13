@@ -10,8 +10,8 @@ export class SuppliersService {
   constructor(private http:HttpClient,private securityService:KeycloakServiceService) { }
   public getSuppliers(){
 
-    return this.http.get("http://localhost:8083/suppliers");
-
+     return this.http.get("http://localhost:8083/suppliers");
+     //return this.http.get("http://localhost:8888/SUPPLIER-SERVICE/suppliers");
   }
 }
 //,
